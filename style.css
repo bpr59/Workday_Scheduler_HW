@@ -2,6 +2,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-position: center;
+  background-size: cover;
 }
 
 textarea{
@@ -28,6 +30,16 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+}
+
+.event-box {
+width: 700px;
+height: 75px;
+background-color: #5cb85c;
+}
+
+.save-box {  
+background-color: #5bc0de;
 }
 
 .row {
@@ -66,8 +78,6 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
 }
 
 .saveBtn i:hover {
