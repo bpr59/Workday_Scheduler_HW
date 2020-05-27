@@ -27,128 +27,133 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p class="dateElement"></p>
-      <p id="currentDay" class="lead"></p>
-      <div style = "font-size:25px" id = "todaysdate"></div>
+      <div style = "font-size:25px" id ="todaysDate"></div>
     </header>
     
-    <div class="container">
+    <div class="container" class="main">
       <table class="table table-hover">
         <thead>
-          <tr>
+          <tr class="title-line">
             <th scope="col">Time of Day</th>
-            <th scope="col">Event/Appointment</th>
-            <th scope="col">Save Changes</th>
+            <th scope="col" style="text-align: center;">Event/Appointment</th>
+            <th scope="col" style="text-align: center;">Save Event</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="pageMaster">
           <tr>
             <div class = "col-md-2">
-              <th scope="row" id="first-hour"></th>
+              <th scope="row" id="9amTime" class="timeOfDay">9:00am</th>
             </div>
             <div class = "col-md-8">
-              <td class="event-box">Otto</td>
+              <td class="event-box"><textarea class="text-box" class="text9" id="box9"></textarea></td>
             </div>
             <div class = "col-md-2">
-              <button type="button" image src="/assets/savebutton.png">ClickMe</button>
+              <td class="save-box"><button id="save9am" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button></td>
             </div>
           </tr>
           <tr>
             <div class = "col-md-2">
-              <th scope="row">10:00am</th>
+              <th scope="row" id="10amTime" class="timeOfDay">10:00am</th>
             </div>
             <div class = "col-md-8">
-              <td class="event-box">Otto</td>
+              <td class="event-box"><textarea class="text-box" class="text10" id="box10"></textarea></td>
             </div>
             <div class = "col-md-2">
-              <td class="save-box" image src="/assets/savebutton.png"></td>
+              <td class="save-box"><button id="save10am" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button></td>
             </div>
           </tr>
           <tr>
             <div class = "col-md-2">
-              <th scope="row">11:00am</th>
+              <th scope="row" id="11am" class="timeOfDay">11:00am</th>
             </div>
             <div class = "col-md-8">
-              <td class="event-box">Otto</td>
+              <td class="event-box"><textarea class="text-box" class="text11" id="box11"></textarea></td>
             </div>
             <div class = "col-md-2">
-              <td class="save-box" image src="/assets/savebutton.png"></td>
+              <td class="save-box"><button id="save11am" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button></td>
             </div>
           </tr>
           <tr>
             <div class = "col-md-2">
-              <th scope="row">12:00pm</th>
+              <th scope="row" id="12pm" class="timeOfDay">12:00pm</th>
             </div>
             <div class = "col-md-8">
-              <td class="event-box">Otto</td>
+              <td class="event-box"><textarea class="text-box" class="text12" id="box12"></textarea></td>
             </div>
             <div class = "col-md-2">
-              <td class="save-box" image src="/assets/savebutton.png"></td>
+              <td class="save-box"><button id="save12pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button></td>
             </div>
           </tr>
           <tr>
             <div class = "col-md-2">
-              <th scope="row">1:00pm</th>
+              <th scope="row" id=1pm class="timeOfDay">1:00pm</th>
             </div>
             <div class = "col-md-8">
-              <td class="event-box">Otto</td>
+              <td class="event-box"><textarea class="text-box" class="text13" id="box13"></textarea></td>
             </div>
             <div class = "col-md-2">
-              <td class="save-box" image src="/assets/savebutton.png"></td>
+              <td class="save-box"><button id="save1pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button></td>
             </div>
           </tr>
           <tr>
             <div class = "col-md-2">
-              <th scope="row">2:00pm</th>
+              <th scope="row" id=2pm class="timeOfDay">2:00pm</th>
             </div>
             <div class = "col-md-8">
-              <td class="event-box">Otto</td>
+              <td class="event-box"><textarea class="text-box" class="text14" id="box14"></textarea></td>
             </div>
             <div class = "col-md-2">
-              <td class="save-box" image src="/assets/savebutton.png"></td>
+              <td class="save-box"><button id="save2pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button></td>
             </div>
           </tr>
           <tr>
             <div class = "col-md-2">
-              <th scope="row">3:00pm</th>
+              <th scope="row" id=3pm class="timeOfDay">3:00pm</th>
             </div>
             <div class = "col-md-8">
-              <td class="event-box">Otto</td>
+              <td class="event-box"><Textarea class="text-box" class="text15" id="box15"></Textarea></td>
             </div>
             <div class = "col-md-2">
-              <td class="save-box" image src="/assets/savebutton.png"></td>
+              <td class="save-box"><button id="save3pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button></td>
             </div>
           </tr>
           <tr>
             <div class = "col-md-2">
-              <th scope="row">4:00pm</th>
+              <th scope="row" id=4pm class="timeOfDay">4:00pm</th>
             </div>
             <div class = "col-md-8">
-              <td class="event-box">Otto</td>
+              <td class="event-box"><Textarea class="text-box" class="text16" id="box16"></Textarea></td>
             </div>
             <div class = "col-md-2">
-              <td class="save-box" image src="/assets/savebutton.png"></td>
+              <td class="save-box"><button id="save4pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button></td>
             </div>
           </tr>
           <tr>
             <div class = "col-md-2">
-              <th scope="row">5:00pm</th>
+              <th scope="row" id=5pm class="timeOfDay">5:00pm</th>
             </div>
             <div class = "col-md-8">
-              <td class="event-box">Otto</td>
+              <td class="event-box"><Textarea class="text-box" value="" class="text17" id="box17"></Textarea></td>
             </div>
             <div class = "col-md-2">
-              <td class="save-box" image src="/assets/savebutton.png"></td>
+              <td class="save-box"><button id="save5pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button></td>
             </div>
           </tr>
-          
-         
-
         </tbody>
       </table>  
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
   </body>
