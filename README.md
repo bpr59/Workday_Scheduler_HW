@@ -1,5 +1,7 @@
 WORKDAY_SCHEDULER_HOMEWORK
 
+Link: https://bpr59.github.io/Workday_Scheduler_HW/
+
 General Information
 
 * To begin this homework, we were provided an index file and a CSS file with the basic class labels we would need to create
